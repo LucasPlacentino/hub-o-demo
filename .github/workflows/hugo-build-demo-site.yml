@@ -21,6 +21,7 @@ jobs:
           submodules: true  # Fetch the Hub-o theme
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
           
+      - run: cd /home/runner/work/hub-o-demo/hub-o-demo
       - run: mkdir themes
       - run: cd themes
       - run: git clone https://github.com/LucasPlacentino/hub-o
