@@ -24,8 +24,9 @@ jobs:
       - run: cd /home/runner/work/hub-o-demo/hub-o-demo
       - run: mkdir themes
       - run: cd themes
-      - run: git clone https://github.com/LucasPlacentino/hub-o
-      - run: cd ..
+      - run: git submodule add --force https://github.com/LucasPlacentino/hub-o
+#      - run: git clone https://github.com/LucasPlacentino/hub-o
+#      - run: cd ..
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
