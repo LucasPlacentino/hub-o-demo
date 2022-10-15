@@ -34,9 +34,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - run: find / -name package-lock.json
-      - run: find / -name hub-o -type d
-      - run: find / -name themes -type d
+      - run: find /home -name package-lock.json
+      - run: find /home -name hub-o -type d
+      - run: find /home -name themes -type d
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -47,7 +47,7 @@ jobs:
           # npm-shrinkwrap.json or yarn.lock) in the repository root, and uses its
           # hash as a part of the cache key.
           # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
-          cache-dependency-path: 'themes/hub-o/package-lock.json'
+          cache-dependency-path: '/home/runner/work/hub-o-demo/hub-o-demo/themes/hub-o/package-lock.json'
 
       - run: npm ci
       - run: hugo --minify
