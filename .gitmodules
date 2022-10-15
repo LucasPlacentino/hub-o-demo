@@ -1,3 +1,3 @@
-[submodule "themes/hub-o"]
+[submodule "hub-o"]
 	path = themes/hub-o
 	url = https://github.com/LucasPlacentino/hub-o.git
