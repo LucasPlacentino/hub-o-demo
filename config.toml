@@ -1,0 +1,40 @@
+baseURL = "https://placentino.be/"
+languageCode = "en-us"
+title = "hub-o demo"
+theme = "hub-o"
+
+publishDir = "docs"
+
+[ params ]
+BackgroundImages = [
+  "bg/b1920-000.jpg",
+  "bg/b1920-001.jpg"
+]
+Favicon = "favicon.ico"
+BackgroundStyle = "#657383"
+OpenLinksInNewWindow = true
+
+[[ params.nav ]]
+name = "favorites"
+tag = "favorite"
+icon = "star"
+
+[[ params.nav ]]
+name = "search"
+tag = "search"
+icon = "search"
+
+[[ params.nav ]]
+name = "shopping"
+tag = "shopping"
+icon = "shopping-basket"
+
+[[ params.nav ]]
+name = "music"
+tag = "music"
+icon = "headphones"
+
+[[ params.nav ]]
+name = "video"
+tag = "video"
+icon = "video-camera"
