@@ -2,9 +2,13 @@ baseURL = "https://LucasPlacentino.github.io/hub-o-demo"
 languageCode = "en-us"
 title = "hub-o demo"
 theme = "hub-o"
-themeDir = "themes"
+#themeDir = "themes"
 
 publishDir = "docs"
+
+[ module ]
+[[ module.imports ]]
+  path = 'github.com/LucasPlacentino/hub-o'
 
 [ params ]
 BackgroundImages = [
