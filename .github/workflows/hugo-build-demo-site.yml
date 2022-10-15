@@ -20,6 +20,11 @@ jobs:
         with:
           submodules: true  # Fetch the Hub-o theme
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+          
+      - run: mkdir themes
+      - run: cd themes
+      - run: git clone https://github.com/LucasPlacentino/hub-o
+      - run: cd ..
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
