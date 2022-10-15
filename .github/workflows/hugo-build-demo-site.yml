@@ -38,18 +38,18 @@ jobs:
 #      - run: find /home/runner/work -name hub-o -type d
 #      - run: find /home/runner/work -name themes -type d
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16.18.0'
-          cache: 'npm'
+#      - name: Setup Node
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: '16.18.0'
+#          cache: 'npm'
           # The action defaults to search for the dependency file (package-lock.json,
           # npm-shrinkwrap.json or yarn.lock) in the repository root, and uses its
           # hash as a part of the cache key.
           # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
-          cache-dependency-path: '/home/runner/work/hub-o-demo/hub-o-demo/themes/hub-o/package-lock.json'
+#          cache-dependency-path: '/home/runner/work/hub-o-demo/hub-o-demo/themes/hub-o/package-lock.json'
 
-      - run: npm ci
+#      - run: npm ci
       - run: hugo --minify
 
       - name: Deploy to gh-pages
