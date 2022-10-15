@@ -6,9 +6,9 @@ theme = "hub-o"
 
 publishDir = "docs"
 
-[ module ]
-[[ module.imports ]]
-  path = 'github.com/LucasPlacentino/hub-o'
+#[ module ]
+#[[ module.imports ]]
+#  path = 'github.com/LucasPlacentino/hub-o'
 
 [ params ]
 BackgroundImages = [
