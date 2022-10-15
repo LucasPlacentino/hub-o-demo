@@ -34,9 +34,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - run: find /home -name package-lock.json
-      - run: find /home -name hub-o -type d
-      - run: find /home -name themes -type d
+#      - run: find /home/runner/work -name package-lock.json
+#      - run: find /home/runner/work -name hub-o -type d
+#      - run: find /home/runner/work -name themes -type d
 
       - name: Setup Node
         uses: actions/setup-node@v3
