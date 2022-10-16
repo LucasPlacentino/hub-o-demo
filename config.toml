@@ -18,6 +18,7 @@ BackgroundImages = [
 Favicon = "favicon.ico"
 BackgroundStyle = "#657383"
 OpenLinksInNewWindow = true
+side_menu_bar = true
 
 [[ params.nav ]]
 name = "favorites"
