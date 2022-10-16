@@ -1,4 +1,4 @@
 [submodule "themes/hub-o"]
 	path = themes/hub-o
 	url = https://github.com/LucasPlacentino/hub-o.git
-	branch = main
+	branch = .
